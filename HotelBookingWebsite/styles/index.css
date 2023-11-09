@@ -1,0 +1,158 @@
+
+
+
+.cities{
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+}
+.logos{
+    height: 20px;
+    width: 22px;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #e0e0e0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+  
+html{
+    margin: 0%;
+}
+#bg{
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    height: 380px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#vmore{
+    text-decoration: none;
+    color: black;
+}
+
+
+#f2{
+    font-size: 10px;
+}
+#city {
+    border: 1px transparent solid;
+    background-color:  #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top: 10%;
+    width: 400px;
+}
+.search-items{
+    border: 1px transparent solid;
+    background-color:white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: left;
+    margin-left: 36.9%;
+}
+#vmorediv{
+    text-align: center;
+}
+input:focus{
+    outline: none;
+}
+.citycardsdiv{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8{
+    box-shadow: 10px 10px 10px grey;
+    border: 0px;
+}
+
+.imagecontent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+}
+.imagetext{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1; 
+  border-radius: 25%;
+  text-align: center;
+  opacity: 0;
+  
+}
+.imagecontent:hover .imagetext{
+    opacity: 1;
+}
+a{
+    text-decoration: none;
+}
+.cityspan{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#nextcardsset{
+    display: none;
+}
+
+
+@media screen and (max-width: 576px) {
+    #bg {
+        width: 60%;
+    }
+    .citycardsdiv {
+        flex-direction: column;
+        margin: auto;
+        padding: 4% 0%;
+    }
+    .cities{
+        height: 200px;
+        width: 200px;
+    }
+    
+    #vmorediv {
+        margin-bottom:20%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #bg {
+        width: 60%;
+    }
+    .citycardsdiv {
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 4% 0%;
+    
+    }
+    .cities{
+        height: 250px;
+        width: 260px;
+    }
+    
+}
+

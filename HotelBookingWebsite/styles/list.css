@@ -1,0 +1,129 @@
+
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #e0e0e0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#f2 {
+    font-size: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+#pills-home-tab {
+    color: black;
+}
+
+#pills-profile-tab {
+    color: black;
+}
+
+.checked{
+    color: orange;
+}
+.checked1.half:after
+{
+margin-left:-24px;
+width:12px;
+color: orange;
+}
+.checked1{
+width : 24px;
+ }
+ .check{
+    color: orange;
+ }
+
+
+body{
+    background-color: lightgray;
+}
+#hotel-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    justify-content: space-around;
+}
+.hotel{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    margin-left: 2%;
+    margin-bottom: 10%;
+    width: 600px;
+    height: 200px;
+    margin-right: 2%;
+}
+.hotel-image-small {
+    height: 200px;
+    width: 250px;
+}
+.hotel-name-rating{
+    margin: 3%;
+    text-decoration: none;
+}
+.hotel-name-rating:hover{
+    text-decoration: none;
+}
+.hotel:hover{
+    background-color: rosybrown;
+    text-decoration: none;
+}
+#list-map {
+    position: relative;
+    top: 0%;
+}
+#map {
+    height: 82vh;
+    margin-top: 2%;
+}
+#pills-tab {
+    justify-content: center;
+}
+@media screen and (max-width: 576px) {  
+    #l2 {
+        margin-bottom: 150%;
+    }
+
+    #pills-tab {
+        padding-top: 15%;
+    }
+
+    .hotel{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .hotel-image-small {
+        width: 100%;
+    }
+
+    #pills-profile > img {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #pills-tab {
+        padding-top: 5%;
+    }
+    
+    .hotel{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #pills-profile > img {
+        width: 100%;
+    }
+}
+
